@@ -1,0 +1,236 @@
+.project_content_container {
+  height: fit-content;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project_content {
+  height: fit-content;
+  width: 90%;
+  /* background-color: blue;  */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project_title_container {
+  height: 50px;
+  width: 100%;
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.title_project_style_text {
+  font-size: 30px;
+  color: #ffff;
+  font-weight: bolder;
+  font-family: Montserrat, sans-serif;
+}
+.title_project_style_text_green {
+  font-size: 30px;
+  color: #01be96;
+  font-weight: bolder;
+  font-family: Montserrat, sans-serif;
+}
+.body_projectme_content_container {
+  height: 350px;
+  width: 100%;
+  /* background-color: pink; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.projectweather_content_container {
+  height: 250px;
+  width:24.7vw;
+  background-color: rgb(78, 81, 86);
+  background-image: url("../../image.Icon/w2.png");
+  background-position: center center;
+  background-size: 23.5vw 220px;
+  background-repeat: no-repeat;
+  /* border: 8px solid blue; */
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  transition: all 0.4s ease-in-out;
+}
+.projectweather_content_container:hover {
+  background-size: 380px 250px;
+  transition: all 0.4s ease-in-out;
+}
+.projectweather_content_container:hover .text_projectw1_content {
+  transform: scale(1);
+  /* transition: transform ; */
+  transition: all 0.4s ease-in-out;
+
+  height: 190px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.299);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  backdrop-filter: blur(3px);
+}
+
+.text_projectw1_content {
+  transform: scale(0);
+  transition: all 0.4s ease-in-out;
+}
+.textTitle_project_weather {
+  font-size: 18px;
+  color: black;
+  font-weight: bolder;
+  font-family: Montserrat, sans-serif;
+}
+.text_project_weather {
+  font-size: 14px;
+  letter-spacing: 1px;
+  /* text-align: center; */
+  margin-right: 10px;
+  color: black;
+  font-weight: bold;
+  font-family: Montserrat, sans-serif;
+  line-height: 25px;
+}
+
+.projectMackin_content_container {
+  height: 250px;
+  width: 24.7vw;
+  background-color: rgb(78, 81, 86);
+  background-image: url("../../image.Icon/mackin.png");
+  background-position: center center;
+  background-size: 23.5vw 220px;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  transition: all 0.4s ease-in-out;
+}
+.projectMackin_content_container:hover {
+  background-size: 380px 250px;
+  transition: all 0.4s ease-in-out;
+}
+.projectMackin_content_container:hover .text_projectw1_content {
+  transform: scale(1);
+  transition: all 0.4s ease-in-out;
+  height: 190px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.299);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  backdrop-filter: blur(3px);
+}
+.projectweather2_content_container {
+  height: 250px;
+  width: 24.7vw;
+  background-color: rgb(78, 81, 86);
+  background-image: url("../../image.Icon/w1.png");
+  background-position: center center;
+  background-size: 23.5vw 220px;
+  background-repeat: no-repeat;
+  /* border: 8px solid blue; */
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  transition: all 0.4s ease-in-out;
+}
+.projectweather2_content_container:hover {
+  background-size: 380px 250px;
+  transition: all 0.4s ease-in-out;
+}
+.projectweather2_content_container:hover .text_projectw1_content {
+  transform: scale(1);
+  /* transition: transform ; */
+  transition: all 0.4s ease-in-out;
+
+  height: 190px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.299);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  backdrop-filter: blur(3px);
+}
+@media screen and (max-width: 900px) {
+  .body_projectme_content_container{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    /* background-color: blueviolet; */
+    gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .project_content{
+    height: fit-content;
+  }
+  .projectweather_content_container{
+    width: 320px;
+    background-size: 300px 220px;
+  }
+.projectweather2_content_container{
+  width: 320px;
+  background-size: 300px 220px;
+}
+.projectMackin_content_container{
+  width: 320px;
+  background-size: 300px 220px;
+}
+.projectweather2_content_container:hover .text_projectw1_content {
+  transform: scale(0);
+
+}
+.projectMackin_content_container:hover .text_projectw1_content {
+  transform: scale(0);
+  transition: all 0.4s ease-in-out;
+  height: 190px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.299);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  backdrop-filter: blur(3px);
+}
+.projectweather_content_container:hover .text_projectw1_content {
+  transform: scale(0);
+  /* transition: transform ; */
+  transition: all 0.4s ease-in-out;
+
+  height: 190px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.299);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  backdrop-filter: blur(3px);
+}
+.projectweather_content_container:hover {
+  background-size:300px 220px;
+  transition: all 0.4s ease-in-out;
+}
+.projectMackin_content_container:hover {
+  background-size: 300px 220px;
+  transition: all 0.4s ease-in-out;
+}
+.projectweather2_content_container:hover {
+  background-size: 300px 220px;
+  transition: all 0.4s ease-in-out;
+}
+}
