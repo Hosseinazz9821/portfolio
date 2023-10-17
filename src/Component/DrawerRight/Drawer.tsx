@@ -80,7 +80,7 @@ const DrawerHeader = styled('div')(({ theme }) => ({
 
 export default function PersistentDrawerRight() {
   const theme = useTheme();
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = React.useState<boolean>(false);
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -92,7 +92,22 @@ export default function PersistentDrawerRight() {
   function ScrollPage(top: number) {
     window.scrollTo({ top: top, behavior: "smooth" });
   }
-
+const Homescrooll=()=>{
+  ScrollPage(0)
+  setOpen(false)
+} 
+const Servicescrooll=()=>{
+  ScrollPage(800)
+  setOpen(false)
+} 
+const Projectscrooll=()=>{
+  ScrollPage(1320)
+  setOpen(false)
+} 
+const Portfolioscrooll=()=>{
+  ScrollPage(2260)
+  setOpen(false)
+} 
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
@@ -105,7 +120,7 @@ export default function PersistentDrawerRight() {
             color="inherit"
             aria-label="open drawer"
             edge="end"
-            onClick={handleDrawerOpen}
+            onClick={()=>{setOpen(true)}}
             sx={{ ...(open && { display: 'none' }) }}
           >
             <MenuIcon />
@@ -139,7 +154,7 @@ export default function PersistentDrawerRight() {
         open={open}
       >
         <DrawerHeader>
-          <IconButton onClick={handleDrawerClose}>
+          <IconButton onClick={()=>{setOpen(false)}}>
             {theme.direction === 'rtl' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
           </IconButton>
         </DrawerHeader>
@@ -147,17 +162,17 @@ export default function PersistentDrawerRight() {
         <List sx={{display:"flex",alignSelf:"center"}}>
         <div className='scrool_hamber_content'>
         <span className="span" >
-              <a className="a"onClick={()=>{ScrollPage(0)}}>Home</a>
+              <a className="a"onClick={Homescrooll}>Home</a>
             </span>
             <span className="span">
-              <a className="a"onClick={()=>{ScrollPage(800)}}>Services</a>
+              <a className="a"onClick={Servicescrooll}>Services</a>
             </span>
             <span className="span">
-              <a className="a"onClick={()=>{ScrollPage(1300)}}>Projects</a>
+              <a className="a"onClick={Projectscrooll}>Projects</a>
             </span>
          
             <span className="span">
-              <a className="a"onClick={()=>{ScrollPage(2260)}}>Portfolio</a>
+              <a className="a"onClick={Portfolioscrooll}>Portfolio</a>
             </span>
         </div>
         </List>

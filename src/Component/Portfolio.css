@@ -292,6 +292,14 @@
     transition: all 0.5s;
     
   }
+
+  .span:hover::after {
+    transform: scale(0);
+    opacity: 0.7;
+    transition: transform 400ms ease-in-out 0s;
+    transform-origin: left center;
+  }
+
 }
 @media screen and (max-width:600px) {
   .AppBar_content{

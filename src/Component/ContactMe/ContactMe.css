@@ -303,6 +303,8 @@
   align-items: center;
   justify-content: center;
   margin-top: 30px  ;
+  margin-bottom: 50px;
+
 }
 .phone_contactMe:hover {
   color: white;

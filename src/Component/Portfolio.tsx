@@ -97,7 +97,7 @@ export default function Portfolio() {
               Malayer State University. I am 23 years old and in my spare time I
               play football and play games and go out with my friends.
             </div>
-            <div className="lets_talk_container">Let's talk</div>
+            <div className="lets_talk_container" onClick={()=>{ScrollPage(3000)}}>Let's talk</div>
             <div className="style_check_content_conteiner">
               {/* <div className="check_content"> */}
                 <p className="check_style">Check out my:</p>
